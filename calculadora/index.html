@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+<body>
+    
+    <div class="calculadora">
+        <div class="calc">
+            <h1 style="font-family: 'sora';">Calculadora</h1>
+            <table>
+                <tr><input style="text-align: right;" class="display" type="text"></tr>
+                <tr>
+                    <td><button class="btn clean">C</button></td>
+                    <td><button class="btn btn del">del</button></td>
+                    <td><button class="btn btn-num par">(</button></td>
+                    <td><button class="btn btn-num par">)</button></td>
+                </tr>
+                <tr>
+                    <td><button class="btn-num">9</button></td>
+                    <td><button class="btn-num">8</button></td>
+                    <td><button class="btn-num">7</button></td>
+                    <td><button class="btn btn-num vezes">*</button></td>
+                </tr>
+                <tr>
+                    <td><button class="btn-num">6</button></td>
+                    <td><button class="btn-num">5</button></td>
+                    <td><button class="btn-num">4</button></td>
+                    <td><button class="btn-num adi">+</button></td>
+                </tr>
+                <tr>
+                    <td><button class="btn-num">3</button></td>
+                    <td><button class="btn-num">2</button></td>
+                    <td><button class="btn-num">1</button></td>
+                    <td><button class="btn-num sub">-</button></td>
+                </tr>
+                <tr>
+                    <td><button class="btn-num">0</button></td>
+                    <td><button class="btn-num">.</button></td>
+                    <td><button class="btn eq">=</button></td>
+                    <td><button class="btn-num div">/</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="warning">
+        <div class="content">
+            <button class="closeWindow">X</button>
+            <h3>Atenção!</h3>
+            <p>Conta inválida, cheque os valores informados e tente
+                novamente.
+            </p>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>

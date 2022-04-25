@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'sora';
+    font-family: bold;
+}
+
+body{
+    background-color: #ccc;
+}
+
+.calculadora{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    text-align: center;
+}
+
+input{
+    padding: .5rem 1rem;
+    font-size: 1.5rem;
+    width: 100%;
+    outline: none;
+}
+
+.btn, .btn-num{
+    padding: 1.5rem;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: 'sora';
+    width: 100%;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.btn-num{
+    background-color: #3c4043;
+    border: 1px solid #3c4043;
+}
+
+.div, .vezes, .adi, .sub, .clean, .del, .par{
+    background-color: #5f6368;
+    border: 1px solid #5f6368;
+}
+
+.eq{
+    width: 100%;
+    background-color: #8ab4f8;
+    border: 1px solid #8ab4f8;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+table{
+    width: 100%;
+}
+
+.display{
+    font-weight: bold;
+    font-family: 'sora';
+}
+
+@keyframes show{
+    from{
+        opacity: 0;
+        transform: translate3d(0, 30px, 0);
+    }
+    to{
+        opacity: 1;
+        transform: translate3d(0,0,0);
+    }
+}
+
+.warning.active{
+    display: block;
+}
+
+.warning{
+    animation: show .3s forwards;
+    display: none;
+    position: relative;
+    padding: 1%;
+    top: -20rem;
+    left: 10rem;
+    max-width: 500px;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.5), 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.closeWindow{
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    padding: .5rem;
+    font-family: 'sora';
+    font-weight: bold;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 50%;
+}
+
+.content{
+    background-color: #ffc107;
+    color: black;
+    padding: 1rem;
+}
+
+.content h3, p{
+    font-family: 'sora';
+}
